@@ -1,0 +1,122 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(179 174 174 / 50%);
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+h2 {
+  color: black;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+label {
+  display: block;
+  color: #a9a9a9;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  color: black;
+}
+
+input:focus {
+  border-color: #30D67A;
+  outline: none;
+}
+
+button {
+  background-color: #30D67A;
+  color: white;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #28b06b;
+}
+
+input.invalid,
+input.invalid:focus {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  label,
+  .error-message {
+    font-size: 0.65rem;
+  }
+
+  input,
+  button {
+    font-size: 0.7rem;
+    padding: 8px;
+  }
+
+  .container {
+    padding: 15px;
+    width: 90%;
+  }
+}

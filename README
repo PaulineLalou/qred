@@ -1,0 +1,48 @@
+# Overview
+This application allows an admin user to view a list of users and edit their profiles. It is built using React and Redux Toolkit, providing a state management and API calls.
+
+# Features
+User List: Displays a list of users fetched from an API.
+User Profile: Allows viewing and editing a user's profile, with data validation for email and phone number fields.
+API Interaction: Fetches user data from an API and updates user data using API calls.
+
+# Getting Started
+Install dependencies:
+npm install or yarn install
+
+# Start the development server:
+npm start or yarn start
+Open your browser and visit http://localhost:5174/.
+
+# Usage
+View Users: Navigate to the home page to view a list of all users.
+Edit User: Click on "Edit this user" to navigate to a user's profile page, where you can view and edit their information.
+
+# Technologies Used
+React: For building the UI components.
+Redux Toolkit: For managing application state and making asynchronous API calls.
+TypeScript: For adding static typing to JavaScript code.
+React Router: For handling navigation and URL parameters.
+
+# API Endpoints
+Fetch all users: GET https://jsonplaceholder.typicode.com/users
+Fetch a single user: GET https://jsonplaceholder.typicode.com/users/${id}
+Update a user: PUT https://jsonplaceholder.typicode.com/users/${id}
+
+# Testing 
+Running Cypress Tests
+
+Ensure your application is running locally, either in a separate terminal window or as a background process. You can run your application using a command like:
+npm run start
+
+- Running Tests:
+
+Once the Cypress Test Runner is open, you will see a list of test files. Click on E2E testing and the test file you wish to run (e.g., userListAndProfile.cy.js). Cypress will execute the test in a new browser window, and you can observe the running tests in real-time.
+
+# Future Improvements
+Implement user authentication.
+Add unit and integration tests.
+Enhance UI/UX design.
+Add more user interactions like deleting a user or adding a new user.
+
+
