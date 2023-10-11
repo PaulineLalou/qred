@@ -41,7 +41,7 @@ Once the Cypress Test Runner is open, you will see a list of test files. Click o
 
 # Future Improvements
 Implement user authentication.
-Add unit and integration tests.
+Add unit tests.
 Enhance UI/UX design.
 Add more user interactions like deleting a user or adding a new user.
 
